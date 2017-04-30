@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+
+<div class="containerProduct">
+{% for product in products %}
+  <div class="productHome">
+    <img src="{{ product.photo }}">
+    <h2>{{ product.name }}</h2>
+    <h3>{{ product.price }}€ <font class="catProductHome">  _{{ product.categorie }}</font></h3>
+    <div class="descriptionProductHome">
+      {{ product.description }}
+    </div>
+    <a href="{{ path('description', {'id' : product.id }) }}" class="descriptButton">Description ></a>
+    <a href="{{ path('addCart', {'id' : product.id}) }}" class="basket">Ajouter au panier</a>
+  </div>
+{% endfor %}
+<div>
+
+{% endblock %}

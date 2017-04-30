@@ -1,0 +1,27 @@
+ecommerce_homepage:
+    path:     /
+    defaults: { _controller: EcommerceBundle:Default:index }
+
+description:
+    path:     /product/{id}
+    defaults: { _controller: EcommerceBundle:Default:description }
+
+cart:
+    path:     /cart
+    defaults: { _controller: EcommerceBundle:Default:cart }
+
+addProduct:
+    path:     /addProduct
+    defaults: { _controller: EcommerceBundle:Default:addProduct }
+
+search:
+    path:     /search/{name}
+    defaults: { _controller: EcommerceBundle:Default:search }
+
+addCart:
+    path:     /addCart/{id}
+    defaults: { _controller: EcommerceBundle:Default:addCart }
+
+deleteCart:
+    path:     /deleteCart/{id}
+    defaults: { _controller: EcommerceBundle:Default:deleteCart }

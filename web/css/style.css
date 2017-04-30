@@ -1,0 +1,236 @@
+/*GLOBAL*/
+.container{
+	width:70%;
+	margin:0 auto;
+}
+body{
+	margin-top: 70px;
+}
+nav{
+	width:100%;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	top:0px;
+	left:0px;
+	position:fixed;
+	background:black;
+}
+.menuTop{
+	width:80%;
+	margin:0 auto;
+}
+.menuTop div{
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.menuTop img {
+	position: relative;
+	top:10px;
+	height:50px;
+}
+
+.menuTop input{
+	width: 600px;
+	height: 10px;
+	padding:15px;
+}
+.diff{
+	position: relative;
+	top:-10px;
+}
+
+#cart{
+	color:white;
+	font-size: 15px;
+	text-decoration: none;
+}
+/*END GLOBAL*/
+
+/*HOME PRODUCT*/
+.containerProduct{
+	width:100%;
+}
+.productHome{
+	display: inline-block;
+	width:230px;
+	margin:10px auto;
+	padding: 15px;
+	border: 1px solid grey;
+}
+.productHome img{
+	width: 230px;
+	height: 230px;
+}
+.descriptionProductHome{
+	height: 70px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+.catProductHome{
+	color:black;
+	font-size: 12px;
+	float: right;
+}
+h2 {
+	margin-bottom: 0px;
+}
+h3{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color:red;
+}
+a{
+	text-decoration:none;
+}
+.descriptButton{
+	float: right;
+	color:black;
+	margin-bottom: 5px;
+}
+.descriptButton:hover{
+	color:blue;
+}
+.basket {
+	-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	width: 205px;
+	text-align: center;
+}
+.basket:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
+}
+.basket:active {
+	position:relative;
+	top:1px;
+}
+/*END HOME PRODUCT*/
+
+/*CART*/
+table{
+	width:100%;
+}
+.firstTd{
+	width: 110px;
+}
+.productCart img{
+	width: 75px;
+	height: 75px;
+}
+.productCart td{
+	padding: 5px;
+	border-top: 1px solid black;
+}
+/*END CART*/
+
+/*DESCRIPTION*/
+.leftPart{
+	display: inline-block;
+	width:400px;
+	padding:10px;
+
+}
+.leftPart img {
+	width: 380px;
+}
+.rightPart{
+	max-width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.leftPart .basket{
+	margin: 10px auto;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*END DESCRIPTION*/
+
+.dropbtn {
+	background: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
+
+
+
+
+
+
+/**/

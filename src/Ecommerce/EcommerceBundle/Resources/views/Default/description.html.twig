@@ -1,0 +1,22 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+  {% for product in products %}
+  <!-- Ce IF est dû au fait que je ne pouvais pas utiliser find($id) dnas le controller -->
+    {% if idFind == product.id %}
+      <div class="container">
+        <div class="leftPart">
+          <img src="{{ product.photo }}">
+          <a href="{{ path('addCart', {'id' : product.id}) }}" class="basket">Ajouter au panier</a>
+        </div>
+        <div class="rightPart">
+          <h1>{{ product.name }}</h1>
+          <h3>{{ product.price }}€<font class="catProductHome">  _{{ product.categorie }}</font></h3>
+          <div style="text-align:justify;">
+              {{ product.description }}
+          </div>
+        </div>
+      <div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

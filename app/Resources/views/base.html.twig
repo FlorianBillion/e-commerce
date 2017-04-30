@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Ecommerce B2 - BILLION Florian{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+      <nav>
+        <div class="menuTop">
+          <div>
+            <a href="{{ path('ecommerce_homepage') }}">
+              <img alt="Accueil" title="Accueil" src="{{ asset('img/Ecommerce.png') }}" />
+            </a>
+          </div>
+          <div class="diff">
+            <input type="text" placeholder="Rechercher"></input>
+          </div>
+          <div class="diff">
+            <a href="{{ path('cart') }}" id="cart">Mon panier</a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn diff">Compte</button>
+            <div class="dropdown-content">
+              <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+              <a href="{{ path('fos_user_security_login') }}">Connexion</a>
+              <a href="{{ path('fos_user_security_logout') }}">Deconnexion</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+    </body>
+</html>
